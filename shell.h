@@ -153,7 +153,7 @@ int history(info_t *hst);
 int my_alias(info_t *als);
 char *mem_fill(char *t, char c, unsigned int m);
 int cd_cmd(info_t *als);
-int help_cmd(info_t *alc); /* @here */
+int help_cmd(info_t *alc);
 int exit_cmd(info_t *als);
 char *locate_char(char *str, char tx);
 void info_freed(info_t *alc, int ch);
