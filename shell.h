@@ -42,7 +42,7 @@ typedef struct liststr
 /**
  * struct passinfo - guements passed function,
  * @arg: str generated  passed function,
- * @argv:arr 
+ * @argv:arr
  * @path: str dir.path
  * @argc: arg.count
  * @line_count: unkwon error
@@ -59,7 +59,7 @@ typedef struct liststr
  * @status: recall
  * @cmd_buf: adrs of ptr to cmd.
  * @cmd_buf_type: type of CMD.
- * @readfd: modified 
+ * @readfd: modified
  * @histcount: hst of lines.
  */
 typedef struct passinfo
@@ -78,7 +78,7 @@ typedef struct passinfo
 	char **environ;
 	int env_changed;
 	int status;
-	char **cmd_buf; 
+	char **cmd_buf;
 	int cmd_buf_type;
 	int readfd;
 	int histcount;
@@ -153,7 +153,7 @@ int history(info_t *hst);
 int my_alias(info_t *als);
 char *mem_fill(char *t, char c, unsigned int m);
 int cd_cmd(info_t *als);
-int help_cmd(info_t *alc); /* @here */
+int help_cmd(info_t *alc);
 int exit_cmd(info_t *als);
 char *locate_char(char *str, char tx);
 void info_freed(info_t *alc, int ch);
@@ -178,4 +178,4 @@ size_t str_show(const list_t *p);
 list_t *end_node(list_t **p, const char *t, int n);
 list_t *node_plus(list_t **p, const char *t, int n);
 extern char **environ;
-#endif 
+#endif
